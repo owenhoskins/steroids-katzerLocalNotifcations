@@ -1,0 +1,8 @@
+{"datetime":"2014-12-29T13:28:03.746Z","view":"http://localhost/index.html","host":"10.0.1.2:4567","device":"iPhone","level":"info","message":"\"SyntaxError: Expected token '}' - undefined:undefined\"","timestamp":"2014-12-29T13:28:04.953Z"}
+{"datetime":"2014-12-29T13:40:27.549Z","view":"http://localhost/index.html","host":"10.0.1.2:4567","device":"iPhone","level":"info","message":"\"ReferenceError: Can't find variable: notify - undefined:undefined\"","timestamp":"2014-12-29T13:40:28.308Z"}
+{"datetime":"2015-01-09T14:31:55.211Z","view":"http://localhost/index.html","host":"10.0.1.2:4567","device":"iPhone","level":"info","message":"\"deviceready!!\"","timestamp":"2015-01-09T14:31:55.602Z"}
+{"datetime":"2015-01-09T14:32:18.554Z","view":"http://localhost/index.html","host":"10.0.1.2:4567","device":"iPhone","level":"info","message":"\"ReferenceError: Can't find variable: testNotifications - undefined:undefined\"","timestamp":"2015-01-09T14:32:18.677Z"}
+{"datetime":"2015-01-09T14:33:22.520Z","view":"http://localhost/index.html","host":"10.0.1.2:4567","device":"iPhone","level":"info","message":"\"deviceready!!\"","timestamp":"2015-01-09T14:33:23.527Z"}
+{"datetime":"2015-01-09T14:35:15.538Z","view":"http://localhost/index.html","host":"10.0.1.2:4567","device":"iPhone","level":"info","message":"\"deviceready!!\"","timestamp":"2015-01-09T14:35:15.802Z"}
+{"datetime":"2015-01-09T14:39:20.839Z","view":"http://localhost/index.html","host":"10.0.1.2:4567","device":"iPhone","level":"info","message":"\"deviceready!!\"","timestamp":"2015-01-09T14:39:21.160Z"}
+{"datetime":"2015-01-09T14:46:20.010Z","view":"http://localhost/index.html","host":"10.0.1.2:4567","device":"iPhone","level":"info","message":"\"deviceready!!\"","timestamp":"2015-01-09T14:46:20.404Z"}

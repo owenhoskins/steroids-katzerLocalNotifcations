@@ -3,29 +3,54 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Steroids Repro Template</title>
+  <title>katzer localNotifcation test</title>
 
   <!-- cordova.js is served from localhost to ensure the correct version -->
   <script src="http://localhost/cordova.js"></script>
   <script src="/components/steroids-js/steroids.js"></script>
 
-  <!--body background-color is set for Android not to show the loading screen forever-->
-  <style>
-  button {
-    font-size: 30px;
-    margin: 1em;
+  <script type="text/javascript">
+
+  function onBodyLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
   }
-  body {
-    background-color: white; 
+ 
+  function onDeviceReady() {
+        if (!window.plugin.notification.local) {
+            alert("Could not find localNotification");
+        }
+
+        if (window.plugin) {
+
+              steroids.logger.log('deviceready!!');
+        };
+
   }
-  </style>
+
+  function testNotify() {
+    window.plugin.notification.local.add({
+      id         : 'myID',
+      title      : 'I will bother you every minute',
+      message    : '.. until you cancel all notifications',
+      sound      : null,
+      repeat     : 'minutely',
+      autoCancel : false,
+      date       : new Date(new Date().getTime() + 10*1000)
+    });    
+  }
+
+    
+    </script>
 
 </head>
-<body>
-  <h2>Steroids Repro Template</h2>
-
-  <script>
-    //Add your JavaScripts here
-  </script>
+<body onload="onBodyLoad()">
+  <h2>katzer localNotifcation tests</h2>
+    
+    <div id="container">
+      <h1>LocalNotification Plugin</h1>
+      <section class="dialog">
+          <button onclick="testNotify();">Notifications</button>
+        </section>
+    </div>
 </body>
 </html>
